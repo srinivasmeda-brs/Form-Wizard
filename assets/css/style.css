@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color:white;
+    font-weight:bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .container {
+      width: 100%;
+      height: 100vh;
+      background-color:rgb(2, 196, 255);
+      background-size: cover;
+      margin-top:-20px;
+      display:flex;
+      justify-content:center;
+  }
+  .main1 {
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.4px);
+-webkit-backdrop-filter: blur(12.4px);
+border: 1px solid rgba(255, 255, 255, 0.13);
+height:600px;
+ width:600px;
+ text-align: center;
+  }
+
+.container .main1  label {
+      color: #e3dedeea;
+      font-size: 18px;
+      margin-bottom: 10px;
+}
+.container .main1  input {
+      padding: 12px 20px;
+      margin: 20px 0;
+      display: inline-block;
+      border: none;
+      background-color: #f1f1f1;
+      color: black;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: large;
+  
+}
+.gender {
+    margin-left:-50px;
+    margin-right:10px;
+}
+.email  {
+      margin-left:0px;
+      margin-right:40px;
+}
+.password {
+      
+    margin-right:10px;
+}
+.btn {
+    background-color: #0539f3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius:5px;
+}
+  /* Step display */
+  .step {
+      display: none;
+  }
+  
+  .step.active {
+      display: block;
+  }
+  
+  /* Modal styling */
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+      background-color: white;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      text-align: center;
+  }
+  
+  .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+      color: black;
+      cursor: pointer;
+  }
+
+  .main2{
+      /* From https://css.glass */
+background: rgba(255, 255, 255, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.4px);
+-webkit-backdrop-filter: blur(12.4px);
+border: 1px solid rgba(255, 255, 255, 0.13);
+height:600px;
+ width:600px;
+ text-align: center;
+  }
+
+.main2 label {
+    color: #e3dedeea;
+      font-size: 18px;
+      margin-bottom: 10px;
+}  
+.main2 select {
+      padding: 12px 20px;
+      margin: 30px 0;
+      display: inline-block;
+      border: none;
+      background-color: #f1f1f1;
+      color: black;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: large;
+}
+.course{
+      margin-left:0px;
+}
+
+.main3{
+      /* From https://css.glass */
+background: rgba(255, 255, 255, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.4px);
+-webkit-backdrop-filter: blur(12.4px);
+border: 1px solid rgba(255, 255, 255, 0.13);
+height:600px;
+ width:600px;
+ text-align: center;
+}
+#step4{
+     /* From https://css.glass */
+background: rgba(255, 255, 255, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.4px);
+-webkit-backdrop-filter: blur(12.4px);
+border: 1px solid rgba(255, 255, 255, 0.13);
+height:600px;
+ width:600px;
+ text-align: center;
+}
+#step4 input{
+      padding: 12px 20px;
+      margin: 20px 0;
+      display: inline-block;
+      border: none;
+      background-color: #f1f1f1;
+      color: black;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: large;
+}
+
+
+.time{
+    margin-left:-40px;
+}
+#scheduleModal{
+    color:rgb(28, 25, 25);
+}

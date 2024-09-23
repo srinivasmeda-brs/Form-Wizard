@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Wizard with Popup</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Step 1: Personal Info -->
+        <div class="step active main1" id="step1">
+            <h2> Personal Information</h2>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+            <label for="gender" class="gender">Gender : </label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label> 
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            <label for="email" class="email">Email  </label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password" class = "password">Password</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="button" class="btn" onclick="nextPrev(1)"  >Continue</button>
+        </div>
+
+        <!-- Step 2: Select Course -->
+        <div class="step main2" id="step2" >
+            <h2>Select Course</h2>
+            <label for="course" class="course">Select a Course:</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Select a course</option>
+                <option value="internship">Internship</option>
+                <option value="frontend_developer">Frontend Developer</option>
+                <option value="fullstack_developer">Full Stack Developer</option>
+            </select><br>
+            <label for="education">Select Education Level:</label>
+            <select id="education" name="education" required>
+                <option value="" disabled selected>Select your education level</option>
+                <option value="student">Student</option>
+                <option value="graduate">Graduate</option>
+                <option value="postgraduate">Postgraduate</option>
+            </select><br>
+            <button type="button" class="btn" onclick="nextPrev(1)">Continue</button>
+        </div>
+
+        <!-- Step 3: Schedule and Time -->
+        <div class="step" id="step4" >
+            <h2>Schedule a Meeting</h2>
+            <form id="scheduleForm">
+                <label for="scheduleDate" class ="date">Select Date</label>
+                <input type="date" id="scheduleDate" name="scheduleDate" required><br>
+                <label for="scheduleTime" class = "time">Select Time</label>
+                <input type="time" id="scheduleTime" name="scheduleTime" required><br>
+                <button type="button" class="btn" onclick="nextPrev(1)">Submit</button>
+            </form>
+        </div>
+
+        <!-- Popup Modal -->
+        <div id="scheduleModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Confirmation</h2>
+                <p id="modalContent">You have scheduled your meeting for:</p>
+                <button onclick="closeModal()">OK</button>
+            </div>
+        </div>
+    </div>
+
+  
+<script src="assets/js/script.js"></script>
+</body>
+</html>
